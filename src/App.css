@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  width: 710px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addnew {
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 150px;
+  margin: 20px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.todoForm {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  padding: 55px;
+  background-color: #d9d9d9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  position: absolute;
+  top: 25px;
+  left: 55px;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  width: 600px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.btns {
+  position: absolute;
+  right: 55px;
+  bottom: 25px;
+}
+
+.btn {
+  margin-left: 10px;
+  height: 40px;
+  width: 90px;
+}
+
+.add {
+  border: none;
+  color: #f1f5fc;
+  background-color: #5688e1;
+}
+.add:hover {
+  border: 1px solid black;
+  color: #5688e1;
+  background-color: #f1f5fc;
+}
+
+.btn.cancel:hover {
+  border: 1px solid black;
+  color: #666666;
+  background-color: #f1f5fc;
+}
+
+.btn.cancel {
+  border: none;
+  color: #f1f5fc;
+  background-color: #666666;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+li {
+  position: relative;
+  background-color: #efefef;
+  margin-bottom: 15px;
+  padding: 8px 8px 8px 35px;
+}
+
+.statusColorDone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #9dc184;
+}
+.statusColorUnstart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #df9d9b;
+}
+
+.statusColorInprogress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #fbe4a2;
+}
+
+.indicatorBox {
+  margin-top: 50px;
+}
+
+.indicator {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 130px;
+  height: 53px;
+  line-height: 53px;
+  white-space: nowrap;
+}
+.indicator p {
+  margin-left: 30px;
+}
+
+.edit {
+  display: none;
+}
+div.editing .edit {
+  display: block;
+  margin: 2px;
+  height: 30px;
+}
+
+div.editing .view {
+  display: none;
+}
+
+::placeholder {
+  color: black;
 }
